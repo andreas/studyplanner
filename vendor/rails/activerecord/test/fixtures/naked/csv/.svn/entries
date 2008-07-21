@@ -1,0 +1,40 @@
+8
+
+dir
+2
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner/trunk/vendor/rails/activerecord/test/fixtures/naked/csv
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner
+
+
+
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35ba3173-0730-0410-8f33-806d5331b7ff
+
+accounts.csv
+file
+
+
+
+
+2007-05-09T20:29:36.859375Z
+68b329da9893e34099c7d8ad5cb9c940
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+

@@ -1,0 +1,6 @@
+Please choose a year:<br />
+<ul>
+<% (0...years.length).each do |i| -%>
+  <li><%= link_to_remote "#{(i+1).ordinalize} year", :method => :post, :url => { :controller => "course_registrations", :action => "select_season", :year => years[i] } %></li>
+<% end -%>
+</ul>

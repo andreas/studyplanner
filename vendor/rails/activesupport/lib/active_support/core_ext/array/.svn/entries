@@ -1,0 +1,52 @@
+8
+
+dir
+2
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner/trunk/vendor/rails/activesupport/lib/active_support/core_ext/array
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner
+
+
+
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35ba3173-0730-0410-8f33-806d5331b7ff
+
+conversions.rb
+file
+
+
+
+
+2007-05-09T20:29:32.609375Z
+705c419ee3b98fdc6d7527618897dbde
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+grouping.rb
+file
+
+
+
+
+2007-05-09T20:29:32.625000Z
+e66ca44c298a1555efcac4906eb0246f
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+

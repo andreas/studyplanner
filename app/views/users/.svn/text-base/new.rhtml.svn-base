@@ -1,0 +1,24 @@
+<% @header = "Save studyplan" %>
+
+<p>
+	Please enter a valid email address and password.
+</p>
+<% remote_form_for(:user, :url => users_path) do |f| %>
+  <table cellspacing="15">
+    <tr>
+      <td>Email:</td>
+      <td><%= f.text_field 'email', :id => 'user_email' %></td>
+    </tr>
+    <tr>
+      <td>Password:</td>
+      <td><%= f.password_field 'password' %></td>
+    </tr>
+    <tr>
+      <td colspan="2"><%= submit_tag "Save" %></td>
+    </tr>
+  </table>
+<% end %>
+<script>
+  $('user_email').focus();
+</script>
+<%= link_to_close_redbox 'Close' %>

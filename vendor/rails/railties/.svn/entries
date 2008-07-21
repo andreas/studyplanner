@@ -1,0 +1,115 @@
+8
+
+dir
+2
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner/trunk/vendor/rails/railties
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner
+
+
+
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35ba3173-0730-0410-8f33-806d5331b7ff
+
+helpers
+dir
+
+Rakefile
+file
+
+
+
+
+2007-05-09T20:30:33.468750Z
+1c2008fd6b7355440806fd4be8e66e5d
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+html
+dir
+
+doc
+dir
+
+builtin
+dir
+
+lib
+dir
+
+dispatches
+dir
+
+environments
+dir
+
+CHANGELOG
+file
+
+
+
+
+2007-05-09T20:30:33.484375Z
+d96cd62cd818ae1a03c3c63fbe288516
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+bin
+dir
+
+configs
+dir
+
+MIT-LICENSE
+file
+
+
+
+
+2007-05-09T20:30:33.484375Z
+f764e1184ad8e4b928e3fe1f60248b7d
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+fresh_rakefile
+file
+
+
+
+
+2007-05-09T20:30:33.484375Z
+17f2f134da4cd31ea095d5868ca89e86
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+README
+file
+
+
+
+
+2007-05-09T20:30:33.484375Z
+2ffe7715fd6ba5509508a29022c22a17
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+

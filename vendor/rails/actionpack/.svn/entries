@@ -1,0 +1,109 @@
+8
+
+dir
+2
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner/trunk/vendor/rails/actionpack
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner
+
+
+
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35ba3173-0730-0410-8f33-806d5331b7ff
+
+test
+dir
+
+RUNNING_UNIT_TESTS
+file
+
+
+
+
+2007-05-09T20:30:16.484375Z
+f9106c25b3691dc3a82679034daa39f1
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+Rakefile
+file
+
+
+
+
+2007-05-09T20:30:16.484375Z
+365a7d09957a1d6e3cd6e61af3550a23
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+lib
+dir
+
+CHANGELOG
+file
+
+
+
+
+2007-05-09T20:30:16.500000Z
+da4c7389cbe49601cbcb93381de067ee
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+install.rb
+file
+
+
+
+
+2007-05-09T20:30:16.500000Z
+70c1c1546905d0c8663a78524efc5438
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+MIT-LICENSE
+file
+
+
+
+
+2007-05-09T20:30:16.500000Z
+17678743767de42ec524628856a98c71
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+README
+file
+
+
+
+
+2007-05-09T20:30:16.500000Z
+162a150c4fd8bb91c8b6ae64018d5337
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+examples
+dir
+

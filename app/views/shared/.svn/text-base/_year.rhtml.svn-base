@@ -1,0 +1,22 @@
+<% @year = year %>
+<% content_tag "div", :id => dom_id(year), :class => dom_class(year) do %>
+  <table class="title">
+    <tr>
+      <td>
+    	  <h2>
+    		  <%= in_place_editor_field('year', 'title', {}, { :highlightendcolor => "#C8C8C8" }) %>
+        </h2>
+        <%= link_to_remote("[delete]",
+                                 :method => :post,
+                                 :url => { :controller => "years", :action => "destroy", :id => year.id },
+                                 :confirm => "Are you sure you want to delete the year?"
+                                 )
+        %>
+      </td>
+      <td align="right">Fall: <%= content_tag :span, year.points(:fall), :id => "#{dom_id(year)}_fall_points" %> points | Spring: <%= content_tag :span, year.points(:spring), :id => "#{dom_id(year)}_spring_points" %> points</td>
+    </tr>
+  </table>
+  <%= render :partial => 'shared/timetable', :locals => { :season => "fall", :timetable => year.fall_timetable } %>
+  <br/>
+  <%= render :partial => 'shared/timetable', :locals => { :season => "spring", :timetable => year.spring_timetable } %>
+<% end %>

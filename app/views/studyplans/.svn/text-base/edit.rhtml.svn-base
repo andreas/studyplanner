@@ -1,0 +1,12 @@
+<h1>Editing studyplan</h1>
+
+<%= error_messages_for :studyplan %>
+
+<% form_for(:studyplan, :url => studyplan_path(@studyplan), :html => { :method => :put }) do |f| %>
+  <p>
+    <%= submit_tag "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', studyplan_path(@studyplan) %> |
+<%= link_to 'Back', studyplans_path %>

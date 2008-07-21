@@ -1,0 +1,190 @@
+8
+
+dir
+2
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner/trunk/vendor/rails/actionwebservice/lib/action_web_service
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner
+
+
+
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35ba3173-0730-0410-8f33-806d5331b7ff
+
+client.rb
+file
+
+
+
+
+2007-05-09T20:30:20.890625Z
+05db22cc5a8a813ae5173912710aa559
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+scaffolding.rb
+file
+
+
+
+
+2007-05-09T20:30:20.890625Z
+05c871e97ae62cf21d6ff59eecac1b53
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+container
+dir
+
+container.rb
+file
+
+
+
+
+2007-05-09T20:30:20.890625Z
+b22c29a2bd5789af14f1c5de9f5333bc
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+struct.rb
+file
+
+
+
+
+2007-05-09T20:30:20.953125Z
+fd0cf6fddc8fd349edfe8fd738b54485
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+dispatcher
+dir
+
+version.rb
+file
+
+
+
+
+2007-05-09T20:30:20.953125Z
+a4f615e4386690996eb2e70e5f48ea74
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+dispatcher.rb
+file
+
+
+
+
+2007-05-09T20:30:20.953125Z
+455203d06bd858a20146f60cd8d02664
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+casting.rb
+file
+
+
+
+
+2007-05-09T20:30:20.953125Z
+de2b1bfb0601e1aa606884ed3e86a3b6
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+test_invoke.rb
+file
+
+
+
+
+2007-05-09T20:30:21.062500Z
+e0659306d96d0a0857fdf78f4260fd96
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+templates
+dir
+
+protocol
+dir
+
+protocol.rb
+file
+
+
+
+
+2007-05-09T20:30:21.062500Z
+7d1660d78f669b65e883ff9ca085cc41
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+invocation.rb
+file
+
+
+
+
+2007-05-09T20:30:21.062500Z
+e034c4058eb76b9e5288a176b030a388
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+api.rb
+file
+
+
+
+
+2007-05-09T20:30:21.062500Z
+5d6057a69557aff5b1f7a39b64b595dc
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+support
+dir
+
+base.rb
+file
+
+
+
+
+2007-05-09T20:30:21.093750Z
+2a96347c1f092aaeac8777db9e7851f7
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+client
+dir
+

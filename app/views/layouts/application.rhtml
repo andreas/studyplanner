@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Studyplans: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'screen' %>
+  <%= stylesheet_link_tag 'redbox' %>
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag 'redbox' %>
+</head>
+<body>
+
+<div id="ajaxLoading" style="display: none;">Loading</div>
+
+<div id="menu">
+  <%= image_tag "logo.png", :id => "logo" %>
+  <div id="auth">
+    <% if @studyplan.user %>
+      Hello <%= @studyplan.user.email %>!
+    <% else %>
+      First time user? <%= link_to_remote_redbox("Save studyplan", :url => new_users_path) %>. Otherwise <%= link_to_remote_redbox("Log in", :url => { :controller => "users", :action => "login" } ) %>.
+    <% end %>
+  </div>
+</div>
+
+<div id="content">
+  <%= yield  %>
+</div>
+
+</body>
+</html>

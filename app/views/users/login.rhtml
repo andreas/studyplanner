@@ -1,0 +1,23 @@
+<% @header = "Log in" %>
+
+<p>
+	Please enter your email address and password.
+</p>
+		
+<% remote_form_for(:user, :url => { :controller => "users", :action => "auth" }) do |f| %>
+  <table cellspacing="15">
+    <tr>
+      <td>Email:</td>
+      <td><%= f.text_field 'email' %></td>
+    </tr>
+    <tr>
+      <td>Password:</td>
+      <td><%= f.password_field 'password' %></td>
+    </tr>
+    <tr>
+      <td colspan="2"><%= submit_tag "Log in" %></td>
+    </tr>
+  </table>
+<% end %>
+
+<%= link_to_close_redbox 'Close' %>

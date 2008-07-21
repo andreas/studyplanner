@@ -1,0 +1,52 @@
+8
+
+dir
+2
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner/trunk/vendor/rails/activerecord/lib/active_record/locking
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner
+
+
+
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35ba3173-0730-0410-8f33-806d5331b7ff
+
+optimistic.rb
+file
+
+
+
+
+2007-05-09T20:29:44.265625Z
+42c0c1ab97c352448b4cf01c62492414
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+pessimistic.rb
+file
+
+
+
+
+2007-05-09T20:29:44.265625Z
+64800813d17b42c7101a9eb67065ecad
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+

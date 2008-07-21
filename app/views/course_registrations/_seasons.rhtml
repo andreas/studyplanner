@@ -1,0 +1,6 @@
+Please choose a season:<br />
+<ul>
+<% for season in %w{Fall Spring} do -%>
+  <li><%= link_to_remote season, :method => :post, :url => { :controller => "course_registrations", :action => "select_course_version", :season => season } %></li>
+<% end -%>
+</ul>

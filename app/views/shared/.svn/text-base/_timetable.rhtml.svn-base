@@ -1,0 +1,26 @@
+<table>
+	<tr>
+	    <th class="<%= season %>"><%= season.capitalize %></th>
+	    <th>Mon</th>
+	    <th>Tue</th>
+	    <th>Wed</th>
+	    <th>Thu</th>
+	    <th>Fri</th>
+	</tr>
+	<tr>
+	    <th>8-12</th>
+	    <% for ttmodule in %w{1A 3A 5A 2B 4B} %>
+	      <td><%= render :partial => 'shared/course_registration', :collection => timetable[ttmodule] %></td>
+	    <% end %>
+	</tr>
+	<tr>
+	    <th>13-17</th>
+	    <% for ttmodule in %w{2A 4A 5B 1B 3B} %>
+	      <td><%= render :partial => 'shared/course_registration', :collection => timetable[ttmodule] %></td>
+	    <% end %>
+	</tr>
+	<tr>
+	    <th><%= season == "fall" ? "January" : "June" %></th>
+	    <td colspan="5"><%= render :partial => 'shared/course_registration', :collection => timetable['3W'] %></td>
+	</tr>
+</table>

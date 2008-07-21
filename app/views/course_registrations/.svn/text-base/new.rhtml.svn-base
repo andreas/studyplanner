@@ -1,0 +1,39 @@
+<% @header = @course.name %>
+
+<p>
+  <b>ECTS points:</b> <%= @course.points %>
+</p>
+<p>
+  <b>Objectives:</b> <%= nl2br(@course.objectives) %>
+</p>
+<p>
+  <b>Contents:</b> <%= nl2br(@course.contents) %>
+</p>
+<p>
+	<b>Please select a year and course version.</b>
+</p>
+<% remote_form_for(:course_registration, :url => course_registrations_path) do |f| %>
+  <fieldset>
+    <legend>Course versions</legend>
+    <% for course_version in @course.course_versions do %>
+      <div style="float: left; margin-right: 1em;">
+        <%= f.radio_button('course_version_id', course_version.id, :id => "#{dom_id(course_version)}_option") %>
+        <%= year_image(course_version) %>
+      </div>
+    <% end %>
+  </fieldset>
+  <fieldset>
+    <legend>Years</legend>
+    <% for year in @years %>
+      <div>
+        <%= f.radio_button('year_id', year.id, :id => "#{dom_id(year)}_option") +
+            content_tag(:label, year.title, :for => "#{dom_id(year)}_option") %>
+      </div>
+    <% end %>
+  </fieldset>
+  <p>
+    <%= submit_tag "Add" %>
+  </p>
+<% end %>
+		
+<%= link_to_close_redbox 'Close' %>

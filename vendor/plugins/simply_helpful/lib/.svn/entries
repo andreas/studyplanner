@@ -1,0 +1,43 @@
+8
+
+dir
+2
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner/trunk/vendor/plugins/simply_helpful/lib
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner
+
+
+
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35ba3173-0730-0410-8f33-806d5331b7ff
+
+simply_helpful
+dir
+
+simply_helpful.rb
+file
+
+
+
+
+2007-05-09T20:29:23.406250Z
+2ed3f688a3168e09ac595c643b38ee74
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+

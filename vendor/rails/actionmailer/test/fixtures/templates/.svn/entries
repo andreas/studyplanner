@@ -1,0 +1,40 @@
+8
+
+dir
+2
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner/trunk/vendor/rails/actionmailer/test/fixtures/templates
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner
+
+
+
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35ba3173-0730-0410-8f33-806d5331b7ff
+
+signed_up.rhtml
+file
+
+
+
+
+2007-05-09T20:29:23.937500Z
+7cb9c937ab4270f2a325b81e865c8950
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+

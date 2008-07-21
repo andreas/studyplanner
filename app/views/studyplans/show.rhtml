@@ -1,0 +1,65 @@
+<div id="leftbox">
+  <% rounded_box do %>
+      <%= link_to_remote "Add new year",
+                     :method => :post,
+                     :url => { :controller => "years", :action => "create"},
+                     :with => "'year[studyplan_id]="+@studyplan.id.to_s+"'"
+  	  %>
+      <div id="studyplan">
+  		  <% unless @studyplan.years.empty? %>
+  		    <%= render :partial => "shared/year", :collection => @studyplan.years %>
+  		  <% else %>
+  		    <p>
+    		    <b>Add years</b> to your studyplan by clicking the "Add new year"-link above.
+  		    </p>
+  		  <% end %>
+  <% end %>
+</div>
+
+<div id="rightbox">
+  <% rounded_box do %>
+  	  <div>
+  	    <form id="search_form">
+  	      <%= observe_form :search_form,
+  	               :frequency => 0.5,
+  	               :update => :courses,
+  	               :url => { :controller => "courses", :action => "search", :studyplan => @studyplan.id },
+  	               :condition => "$F('course_filter').length >= 2 || $A($('search_form').getElementsByTagName('input')).any (function(elem) { return elem.checked })"
+  	      %>
+  			<table>
+  				<tr>
+  		   		<td valign="middle">
+    	    	  <%= text_field_tag :course_filter %><br/>
+  	  	    </td>
+  					<td>
+  				        <table>
+  				          <tr>
+  				            <% for wkday in %w{m t w t f} %>
+  				              <th><%= wkday %></th>
+  				            <% end %>
+  				          </tr>
+  				          <% for ttmodules in [%w{1A 3A 5A 2B 4B}, %w{2A 4A 5B 1B 3B}] %>
+  				          <tr>
+  				            <% for ttmodule in ttmodules %>
+  				              <td>
+  				                <%= check_box_tag "modules[]", ttmodule %>
+  				              </td>
+  				            <% end %>
+  				          </tr>
+  				          <% end %>
+  				        </table>
+  					</td>
+  				</tr>
+  			</table>
+  	    </form>
+  	  </div>
+  	  <div id="courses">
+  	    <p>
+  	      Search for courses by entering a <b>coursename</b> or <b>coursenumber</b> in the above textfield.
+  	    </p>
+  	    <p>
+  	      You can filter out courses by <b>choosing one or more weekdays</b> by ticking off the checkboxes.
+  	    </p>
+  	  </div>
+  <% end %>
+</div>

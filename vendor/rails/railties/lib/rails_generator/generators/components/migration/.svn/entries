@@ -1,0 +1,55 @@
+8
+
+dir
+2
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner/trunk/vendor/rails/railties/lib/rails_generator/generators/components/migration
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner
+
+
+
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35ba3173-0730-0410-8f33-806d5331b7ff
+
+migration_generator.rb
+file
+
+
+
+
+2007-05-09T20:30:25.421875Z
+3cee19bdde06f232931850bfe84bcb9e
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+USAGE
+file
+
+
+
+
+2007-05-09T20:30:25.421875Z
+fa02626692237ebb33d5d1b91ceac17e
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+templates
+dir
+

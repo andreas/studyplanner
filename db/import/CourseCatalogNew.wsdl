@@ -1,0 +1,1157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.arcanic.dk/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.arcanic.dk/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Webservice til opslag i DTU's kursuskatalog.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.arcanic.dk/">
+      <s:element name="ApplyDescriptions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WorkFlowXML">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApplyDescriptionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApplyDescriptionsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CourseCatalogVersions">
+        <s:complexType/>
+      </s:element>
+      <s:element name="CourseCatalogVersionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CourseCatalogVersionsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAdmTxt">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetAdmTxtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAdmTxtResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBasket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="matrikelId" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBasketResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBasketResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCatalogVersionSelection">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetCatalogVersionSelectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCatalogVersionSelectionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCourse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="courseCode" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="yearGroup" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCourseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCourseResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCourseDescriptions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="courseNumbers" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="yearGroup" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCourseDescriptionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCourseDescriptionsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLabels">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetLabelsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLabelsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertIntoMyBasket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="matrikelId" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="CourseCode" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="YearGroup" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertIntoMyBasketResponse">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetKeyValues">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetKeyValuesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetKeyValuesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveFromBasket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="coursesToRemove" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="yearGroup" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveFromBasketResponse">
+        <s:complexType/>
+      </s:element>
+      <s:element name="SearchDtuShb">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="courseCode" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="searchWords" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="department" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="teachingPeriod" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="courseCatalogVersion" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="courseCodeStart" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="teachingLanguage" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="courseIDList" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="resultType" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="education" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="CourseType" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="MasterRegular" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="openUniversity" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchDtuShbResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchDtuShbResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployedResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ApplyDescriptionsSoapIn">
+    <wsdl:part name="parameters" element="tns:ApplyDescriptions"/>
+  </wsdl:message>
+  <wsdl:message name="ApplyDescriptionsSoapOut">
+    <wsdl:part name="parameters" element="tns:ApplyDescriptionsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="CourseCatalogVersionsSoapIn">
+    <wsdl:part name="parameters" element="tns:CourseCatalogVersions"/>
+  </wsdl:message>
+  <wsdl:message name="CourseCatalogVersionsSoapOut">
+    <wsdl:part name="parameters" element="tns:CourseCatalogVersionsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetAdmTxtSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAdmTxt"/>
+  </wsdl:message>
+  <wsdl:message name="GetAdmTxtSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAdmTxtResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetBasketSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBasket"/>
+  </wsdl:message>
+  <wsdl:message name="GetBasketSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBasketResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCatalogVersionSelectionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCatalogVersionSelection"/>
+  </wsdl:message>
+  <wsdl:message name="GetCatalogVersionSelectionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCatalogVersionSelectionResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCourseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCourse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCourseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCourseResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCourseDescriptionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCourseDescriptions"/>
+  </wsdl:message>
+  <wsdl:message name="GetCourseDescriptionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCourseDescriptionsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetLabelsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLabels"/>
+  </wsdl:message>
+  <wsdl:message name="GetLabelsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLabelsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="InsertIntoMyBasketSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertIntoMyBasket"/>
+  </wsdl:message>
+  <wsdl:message name="InsertIntoMyBasketSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertIntoMyBasketResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetKeyValuesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetKeyValues"/>
+  </wsdl:message>
+  <wsdl:message name="GetKeyValuesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetKeyValuesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="RemoveFromBasketSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveFromBasket"/>
+  </wsdl:message>
+  <wsdl:message name="RemoveFromBasketSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveFromBasketResponse"/>
+  </wsdl:message>
+  <wsdl:message name="SearchDtuShbSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchDtuShb"/>
+  </wsdl:message>
+  <wsdl:message name="SearchDtuShbSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchDtuShbResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetEmployedSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployed"/>
+  </wsdl:message>
+  <wsdl:message name="GetEmployedSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployedResponse"/>
+  </wsdl:message>
+  <wsdl:message name="CourseCatalogVersionsHttpGetIn"/>
+  <wsdl:message name="CourseCatalogVersionsHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="GetAdmTxtHttpGetIn"/>
+  <wsdl:message name="GetAdmTxtHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="GetBasketHttpGetIn">
+    <wsdl:part name="matrikelId" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBasketHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="GetCatalogVersionSelectionHttpGetIn"/>
+  <wsdl:message name="GetCatalogVersionSelectionHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="GetCourseHttpGetIn">
+    <wsdl:part name="courseCode" type="s:string"/>
+    <wsdl:part name="yearGroup" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCourseHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="GetCourseDescriptionsHttpGetIn">
+    <wsdl:part name="courseNumbers" type="s:string"/>
+    <wsdl:part name="yearGroup" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCourseDescriptionsHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="GetLabelsHttpGetIn"/>
+  <wsdl:message name="GetLabelsHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="InsertIntoMyBasketHttpGetIn">
+    <wsdl:part name="matrikelId" type="s:string"/>
+    <wsdl:part name="CourseCode" type="s:string"/>
+    <wsdl:part name="YearGroup" type="s:string"/>
+    <wsdl:part name="password" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="InsertIntoMyBasketHttpGetOut"/>
+  <wsdl:message name="GetKeyValuesHttpGetIn"/>
+  <wsdl:message name="GetKeyValuesHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="RemoveFromBasketHttpGetIn">
+    <wsdl:part name="coursesToRemove" type="s:string"/>
+    <wsdl:part name="yearGroup" type="s:string"/>
+    <wsdl:part name="id" type="s:string"/>
+    <wsdl:part name="password" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="RemoveFromBasketHttpGetOut"/>
+  <wsdl:message name="SearchDtuShbHttpGetIn">
+    <wsdl:part name="courseCode" type="s:string"/>
+    <wsdl:part name="searchWords" type="s:string"/>
+    <wsdl:part name="department" type="s:string"/>
+    <wsdl:part name="teachingPeriod" type="s:string"/>
+    <wsdl:part name="courseCatalogVersion" type="s:string"/>
+    <wsdl:part name="courseCodeStart" type="s:string"/>
+    <wsdl:part name="teachingLanguage" type="s:string"/>
+    <wsdl:part name="courseIDList" type="s:string"/>
+    <wsdl:part name="resultType" type="s:string"/>
+    <wsdl:part name="education" type="s:string"/>
+    <wsdl:part name="CourseType" type="s:string"/>
+    <wsdl:part name="MasterRegular" type="s:string"/>
+    <wsdl:part name="openUniversity" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="SearchDtuShbHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="GetEmployedHttpGetIn">
+    <wsdl:part name="id" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetEmployedHttpGetOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="CourseCatalogVersionsHttpPostIn"/>
+  <wsdl:message name="CourseCatalogVersionsHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="GetAdmTxtHttpPostIn"/>
+  <wsdl:message name="GetAdmTxtHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="GetBasketHttpPostIn">
+    <wsdl:part name="matrikelId" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetBasketHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="GetCatalogVersionSelectionHttpPostIn"/>
+  <wsdl:message name="GetCatalogVersionSelectionHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="GetCourseHttpPostIn">
+    <wsdl:part name="courseCode" type="s:string"/>
+    <wsdl:part name="yearGroup" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCourseHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="GetCourseDescriptionsHttpPostIn">
+    <wsdl:part name="courseNumbers" type="s:string"/>
+    <wsdl:part name="yearGroup" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetCourseDescriptionsHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="GetLabelsHttpPostIn"/>
+  <wsdl:message name="GetLabelsHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="InsertIntoMyBasketHttpPostIn">
+    <wsdl:part name="matrikelId" type="s:string"/>
+    <wsdl:part name="CourseCode" type="s:string"/>
+    <wsdl:part name="YearGroup" type="s:string"/>
+    <wsdl:part name="password" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="InsertIntoMyBasketHttpPostOut"/>
+  <wsdl:message name="GetKeyValuesHttpPostIn"/>
+  <wsdl:message name="GetKeyValuesHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="RemoveFromBasketHttpPostIn">
+    <wsdl:part name="coursesToRemove" type="s:string"/>
+    <wsdl:part name="yearGroup" type="s:string"/>
+    <wsdl:part name="id" type="s:string"/>
+    <wsdl:part name="password" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="RemoveFromBasketHttpPostOut"/>
+  <wsdl:message name="SearchDtuShbHttpPostIn">
+    <wsdl:part name="courseCode" type="s:string"/>
+    <wsdl:part name="searchWords" type="s:string"/>
+    <wsdl:part name="department" type="s:string"/>
+    <wsdl:part name="teachingPeriod" type="s:string"/>
+    <wsdl:part name="courseCatalogVersion" type="s:string"/>
+    <wsdl:part name="courseCodeStart" type="s:string"/>
+    <wsdl:part name="teachingLanguage" type="s:string"/>
+    <wsdl:part name="courseIDList" type="s:string"/>
+    <wsdl:part name="resultType" type="s:string"/>
+    <wsdl:part name="education" type="s:string"/>
+    <wsdl:part name="CourseType" type="s:string"/>
+    <wsdl:part name="MasterRegular" type="s:string"/>
+    <wsdl:part name="openUniversity" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="SearchDtuShbHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:message name="GetEmployedHttpPostIn">
+    <wsdl:part name="id" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetEmployedHttpPostOut">
+    <wsdl:part name="Body"/>
+  </wsdl:message>
+  <wsdl:portType name="CourseSoap">
+    <wsdl:operation name="ApplyDescriptions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Hæfter den tilhørende tekst på nøgle værdierne i en kursus beskrivelse.</wsdl:documentation>
+      <wsdl:input message="tns:ApplyDescriptionsSoapIn"/>
+      <wsdl:output message="tns:ApplyDescriptionsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="CourseCatalogVersions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returnerer årgangene beskrevet i kursuskataloget.</wsdl:documentation>
+      <wsdl:input message="tns:CourseCatalogVersionsSoapIn"/>
+      <wsdl:output message="tns:CourseCatalogVersionsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdmTxt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retunerer administrative tekster til beskrivelse af kurser.</wsdl:documentation>
+      <wsdl:input message="tns:GetAdmTxtSoapIn"/>
+      <wsdl:output message="tns:GetAdmTxtSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBasket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retunerer en studerendes kursuskurv ved opslag på studienummer.</wsdl:documentation>
+      <wsdl:input message="tns:GetBasketSoapIn"/>
+      <wsdl:output message="tns:GetBasketSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogVersionSelection">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returnerer de åbne årgange af kursuskataloget samt deres åbnings- og lukningsdatoer.</wsdl:documentation>
+      <wsdl:input message="tns:GetCatalogVersionSelectionSoapIn"/>
+      <wsdl:output message="tns:GetCatalogVersionSelectionSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourse">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Slår et enkelt kursus op ud fra enten:&lt;br&gt;a) Kursets versionsnummer: &lt;br&gt;    Kursusnummer-version fx: '01005-2' &lt;br&gt;b) Årgangen kurset tilhører &lt;br&gt;   Kursusnummer,YearGroup fx: '01005','2006/2007'.</wsdl:documentation>
+      <wsdl:input message="tns:GetCourseSoapIn"/>
+      <wsdl:output message="tns:GetCourseSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourseDescriptions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returnerer kursus beskrivelserne for en række af kurser.&lt;br&gt;Opslalget kan laves for en given årgang af kursuskataloger eller &lt;br&gt;en kombination af en kursuskatalog årgang og kursernes versions nummer.&lt;br&gt;fx '01005,01006-1,01006-2','2006/2007'.</wsdl:documentation>
+      <wsdl:input message="tns:GetCourseDescriptionsSoapIn"/>
+      <wsdl:output message="tns:GetCourseDescriptionsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLabels">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retunerer label tekst til beskrivelse af kurser.</wsdl:documentation>
+      <wsdl:input message="tns:GetLabelsSoapIn"/>
+      <wsdl:output message="tns:GetLabelsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoMyBasket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Indsætter et kursus i en studerendes kursuskurv.</wsdl:documentation>
+      <wsdl:input message="tns:InsertIntoMyBasketSoapIn"/>
+      <wsdl:output message="tns:InsertIntoMyBasketSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetKeyValues">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retunerer nøgle værdier og tekster til beskrivelse af kurser.</wsdl:documentation>
+      <wsdl:input message="tns:GetKeyValuesSoapIn"/>
+      <wsdl:output message="tns:GetKeyValuesSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFromBasket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fjerner et kursus fra en studerendes kursuskurv.</wsdl:documentation>
+      <wsdl:input message="tns:RemoveFromBasketSoapIn"/>
+      <wsdl:output message="tns:RemoveFromBasketSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDtuShb">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Søgefunktion til kursushåndbogen.&lt;br&gt; Angives ingen katalog version eller specifik årgang søges der på alle årgange i kursuskataloget.&lt;br&gt;
+                                Der haves to resultat typer: &lt;br&gt;
+                                1) resultType = 'XMLList' : Kort beskrivelse &lt;br&gt; 
+                                1) resultType = 'FullXML' : Fuld beskrivelse &lt;br&gt;</wsdl:documentation>
+      <wsdl:input message="tns:SearchDtuShbSoapIn"/>
+      <wsdl:output message="tns:SearchDtuShbSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployed">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Finder ansat i matriklen</wsdl:documentation>
+      <wsdl:input message="tns:GetEmployedSoapIn"/>
+      <wsdl:output message="tns:GetEmployedSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="CourseHttpGet">
+    <wsdl:operation name="CourseCatalogVersions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returnerer årgangene beskrevet i kursuskataloget.</wsdl:documentation>
+      <wsdl:input message="tns:CourseCatalogVersionsHttpGetIn"/>
+      <wsdl:output message="tns:CourseCatalogVersionsHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdmTxt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retunerer administrative tekster til beskrivelse af kurser.</wsdl:documentation>
+      <wsdl:input message="tns:GetAdmTxtHttpGetIn"/>
+      <wsdl:output message="tns:GetAdmTxtHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBasket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retunerer en studerendes kursuskurv ved opslag på studienummer.</wsdl:documentation>
+      <wsdl:input message="tns:GetBasketHttpGetIn"/>
+      <wsdl:output message="tns:GetBasketHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogVersionSelection">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returnerer de åbne årgange af kursuskataloget samt deres åbnings- og lukningsdatoer.</wsdl:documentation>
+      <wsdl:input message="tns:GetCatalogVersionSelectionHttpGetIn"/>
+      <wsdl:output message="tns:GetCatalogVersionSelectionHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourse">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Slår et enkelt kursus op ud fra enten:&lt;br&gt;a) Kursets versionsnummer: &lt;br&gt;    Kursusnummer-version fx: '01005-2' &lt;br&gt;b) Årgangen kurset tilhører &lt;br&gt;   Kursusnummer,YearGroup fx: '01005','2006/2007'.</wsdl:documentation>
+      <wsdl:input message="tns:GetCourseHttpGetIn"/>
+      <wsdl:output message="tns:GetCourseHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourseDescriptions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returnerer kursus beskrivelserne for en række af kurser.&lt;br&gt;Opslalget kan laves for en given årgang af kursuskataloger eller &lt;br&gt;en kombination af en kursuskatalog årgang og kursernes versions nummer.&lt;br&gt;fx '01005,01006-1,01006-2','2006/2007'.</wsdl:documentation>
+      <wsdl:input message="tns:GetCourseDescriptionsHttpGetIn"/>
+      <wsdl:output message="tns:GetCourseDescriptionsHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLabels">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retunerer label tekst til beskrivelse af kurser.</wsdl:documentation>
+      <wsdl:input message="tns:GetLabelsHttpGetIn"/>
+      <wsdl:output message="tns:GetLabelsHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoMyBasket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Indsætter et kursus i en studerendes kursuskurv.</wsdl:documentation>
+      <wsdl:input message="tns:InsertIntoMyBasketHttpGetIn"/>
+      <wsdl:output message="tns:InsertIntoMyBasketHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetKeyValues">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retunerer nøgle værdier og tekster til beskrivelse af kurser.</wsdl:documentation>
+      <wsdl:input message="tns:GetKeyValuesHttpGetIn"/>
+      <wsdl:output message="tns:GetKeyValuesHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFromBasket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fjerner et kursus fra en studerendes kursuskurv.</wsdl:documentation>
+      <wsdl:input message="tns:RemoveFromBasketHttpGetIn"/>
+      <wsdl:output message="tns:RemoveFromBasketHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDtuShb">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Søgefunktion til kursushåndbogen.&lt;br&gt; Angives ingen katalog version eller specifik årgang søges der på alle årgange i kursuskataloget.&lt;br&gt;
+                                Der haves to resultat typer: &lt;br&gt;
+                                1) resultType = 'XMLList' : Kort beskrivelse &lt;br&gt; 
+                                1) resultType = 'FullXML' : Fuld beskrivelse &lt;br&gt;</wsdl:documentation>
+      <wsdl:input message="tns:SearchDtuShbHttpGetIn"/>
+      <wsdl:output message="tns:SearchDtuShbHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployed">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Finder ansat i matriklen</wsdl:documentation>
+      <wsdl:input message="tns:GetEmployedHttpGetIn"/>
+      <wsdl:output message="tns:GetEmployedHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="CourseHttpPost">
+    <wsdl:operation name="CourseCatalogVersions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returnerer årgangene beskrevet i kursuskataloget.</wsdl:documentation>
+      <wsdl:input message="tns:CourseCatalogVersionsHttpPostIn"/>
+      <wsdl:output message="tns:CourseCatalogVersionsHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdmTxt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retunerer administrative tekster til beskrivelse af kurser.</wsdl:documentation>
+      <wsdl:input message="tns:GetAdmTxtHttpPostIn"/>
+      <wsdl:output message="tns:GetAdmTxtHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetBasket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retunerer en studerendes kursuskurv ved opslag på studienummer.</wsdl:documentation>
+      <wsdl:input message="tns:GetBasketHttpPostIn"/>
+      <wsdl:output message="tns:GetBasketHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogVersionSelection">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returnerer de åbne årgange af kursuskataloget samt deres åbnings- og lukningsdatoer.</wsdl:documentation>
+      <wsdl:input message="tns:GetCatalogVersionSelectionHttpPostIn"/>
+      <wsdl:output message="tns:GetCatalogVersionSelectionHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourse">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Slår et enkelt kursus op ud fra enten:&lt;br&gt;a) Kursets versionsnummer: &lt;br&gt;    Kursusnummer-version fx: '01005-2' &lt;br&gt;b) Årgangen kurset tilhører &lt;br&gt;   Kursusnummer,YearGroup fx: '01005','2006/2007'.</wsdl:documentation>
+      <wsdl:input message="tns:GetCourseHttpPostIn"/>
+      <wsdl:output message="tns:GetCourseHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourseDescriptions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returnerer kursus beskrivelserne for en række af kurser.&lt;br&gt;Opslalget kan laves for en given årgang af kursuskataloger eller &lt;br&gt;en kombination af en kursuskatalog årgang og kursernes versions nummer.&lt;br&gt;fx '01005,01006-1,01006-2','2006/2007'.</wsdl:documentation>
+      <wsdl:input message="tns:GetCourseDescriptionsHttpPostIn"/>
+      <wsdl:output message="tns:GetCourseDescriptionsHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLabels">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retunerer label tekst til beskrivelse af kurser.</wsdl:documentation>
+      <wsdl:input message="tns:GetLabelsHttpPostIn"/>
+      <wsdl:output message="tns:GetLabelsHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoMyBasket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Indsætter et kursus i en studerendes kursuskurv.</wsdl:documentation>
+      <wsdl:input message="tns:InsertIntoMyBasketHttpPostIn"/>
+      <wsdl:output message="tns:InsertIntoMyBasketHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetKeyValues">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retunerer nøgle værdier og tekster til beskrivelse af kurser.</wsdl:documentation>
+      <wsdl:input message="tns:GetKeyValuesHttpPostIn"/>
+      <wsdl:output message="tns:GetKeyValuesHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFromBasket">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fjerner et kursus fra en studerendes kursuskurv.</wsdl:documentation>
+      <wsdl:input message="tns:RemoveFromBasketHttpPostIn"/>
+      <wsdl:output message="tns:RemoveFromBasketHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDtuShb">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Søgefunktion til kursushåndbogen.&lt;br&gt; Angives ingen katalog version eller specifik årgang søges der på alle årgange i kursuskataloget.&lt;br&gt;
+                                Der haves to resultat typer: &lt;br&gt;
+                                1) resultType = 'XMLList' : Kort beskrivelse &lt;br&gt; 
+                                1) resultType = 'FullXML' : Fuld beskrivelse &lt;br&gt;</wsdl:documentation>
+      <wsdl:input message="tns:SearchDtuShbHttpPostIn"/>
+      <wsdl:output message="tns:SearchDtuShbHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployed">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Finder ansat i matriklen</wsdl:documentation>
+      <wsdl:input message="tns:GetEmployedHttpPostIn"/>
+      <wsdl:output message="tns:GetEmployedHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CourseSoap" type="tns:CourseSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ApplyDescriptions">
+      <soap:operation soapAction="http://www.arcanic.dk/ApplyDescriptions" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal" linkifying="false" linkified="0" linkifytime="203"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CourseCatalogVersions">
+      <soap:operation soapAction="http://www.arcanic.dk/CourseCatalogVersions" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdmTxt">
+      <soap:operation soapAction="http://www.arcanic.dk/GetAdmTxt" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBasket">
+      <soap:operation soapAction="http://www.arcanic.dk/GetBasket" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogVersionSelection">
+      <soap:operation soapAction="http://www.arcanic.dk/GetCatalogVersionSelection" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourse">
+      <soap:operation soapAction="http://www.arcanic.dk/GetCourse" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourseDescriptions">
+      <soap:operation soapAction="http://www.arcanic.dk/GetCourseDescriptions" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLabels">
+      <soap:operation soapAction="http://www.arcanic.dk/GetLabels" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoMyBasket">
+      <soap:operation soapAction="http://www.arcanic.dk/InsertIntoMyBasket" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKeyValues">
+      <soap:operation soapAction="http://www.arcanic.dk/GetKeyValues" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFromBasket">
+      <soap:operation soapAction="http://www.arcanic.dk/RemoveFromBasket" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDtuShb">
+      <soap:operation soapAction="http://www.arcanic.dk/SearchDtuShb" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployed">
+      <soap:operation soapAction="http://www.arcanic.dk/GetEmployed" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CourseSoap12" type="tns:CourseSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ApplyDescriptions">
+      <soap12:operation soapAction="http://www.arcanic.dk/ApplyDescriptions" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CourseCatalogVersions">
+      <soap12:operation soapAction="http://www.arcanic.dk/CourseCatalogVersions" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdmTxt">
+      <soap12:operation soapAction="http://www.arcanic.dk/GetAdmTxt" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBasket">
+      <soap12:operation soapAction="http://www.arcanic.dk/GetBasket" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogVersionSelection">
+      <soap12:operation soapAction="http://www.arcanic.dk/GetCatalogVersionSelection" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourse">
+      <soap12:operation soapAction="http://www.arcanic.dk/GetCourse" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourseDescriptions">
+      <soap12:operation soapAction="http://www.arcanic.dk/GetCourseDescriptions" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLabels">
+      <soap12:operation soapAction="http://www.arcanic.dk/GetLabels" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoMyBasket">
+      <soap12:operation soapAction="http://www.arcanic.dk/InsertIntoMyBasket" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKeyValues">
+      <soap12:operation soapAction="http://www.arcanic.dk/GetKeyValues" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFromBasket">
+      <soap12:operation soapAction="http://www.arcanic.dk/RemoveFromBasket" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDtuShb">
+      <soap12:operation soapAction="http://www.arcanic.dk/SearchDtuShb" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployed">
+      <soap12:operation soapAction="http://www.arcanic.dk/GetEmployed" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CourseHttpGet" type="tns:CourseHttpGet">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="CourseCatalogVersions">
+      <http:operation location="/CourseCatalogVersions"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdmTxt">
+      <http:operation location="/GetAdmTxt"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBasket">
+      <http:operation location="/GetBasket"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogVersionSelection">
+      <http:operation location="/GetCatalogVersionSelection"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourse">
+      <http:operation location="/GetCourse"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourseDescriptions">
+      <http:operation location="/GetCourseDescriptions"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLabels">
+      <http:operation location="/GetLabels"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoMyBasket">
+      <http:operation location="/InsertIntoMyBasket"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output/>
+    </wsdl:operation>
+    <wsdl:operation name="GetKeyValues">
+      <http:operation location="/GetKeyValues"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFromBasket">
+      <http:operation location="/RemoveFromBasket"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output/>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDtuShb">
+      <http:operation location="/SearchDtuShb"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployed">
+      <http:operation location="/GetEmployed"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CourseHttpPost" type="tns:CourseHttpPost">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="CourseCatalogVersions">
+      <http:operation location="/CourseCatalogVersions"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdmTxt">
+      <http:operation location="/GetAdmTxt"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBasket">
+      <http:operation location="/GetBasket"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogVersionSelection">
+      <http:operation location="/GetCatalogVersionSelection"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourse">
+      <http:operation location="/GetCourse"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCourseDescriptions">
+      <http:operation location="/GetCourseDescriptions"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLabels">
+      <http:operation location="/GetLabels"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIntoMyBasket">
+      <http:operation location="/InsertIntoMyBasket"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output/>
+    </wsdl:operation>
+    <wsdl:operation name="GetKeyValues">
+      <http:operation location="/GetKeyValues"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveFromBasket">
+      <http:operation location="/RemoveFromBasket"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output/>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDtuShb">
+      <http:operation location="/SearchDtuShb"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployed">
+      <http:operation location="/GetEmployed"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Course">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Webservice til opslag i DTU's kursuskatalog.</wsdl:documentation>
+    <wsdl:port name="CourseSoap" binding="tns:CourseSoap">
+      <soap:address location="http://www.kurser.dtu.dk/CourseWebservice/Course.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="CourseSoap12" binding="tns:CourseSoap12">
+      <soap12:address location="http://www.kurser.dtu.dk/CourseWebservice/Course.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="CourseHttpGet" binding="tns:CourseHttpGet">
+      <http:address location="http://www.kurser.dtu.dk/CourseWebservice/Course.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="CourseHttpPost" binding="tns:CourseHttpPost">
+      <http:address location="http://www.kurser.dtu.dk/CourseWebservice/Course.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

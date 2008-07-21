@@ -1,0 +1,52 @@
+8
+
+dir
+2
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner/trunk/vendor/rails/railties/lib/rails_generator/generators/components/observer/templates
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner
+
+
+
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35ba3173-0730-0410-8f33-806d5331b7ff
+
+unit_test.rb
+file
+
+
+
+
+2007-05-09T20:30:24.765625Z
+165ff2e730af1baa56b5bb6c191fffad
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+observer.rb
+file
+
+
+
+
+2007-05-09T20:30:24.765625Z
+4c895d9eb68003006e79b6e5e7619b37
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+

@@ -1,0 +1,9 @@
+<% content_tag :div, :class => dom_id(course_registration) do %>
+  <%= course_registration.course_code +
+      link_to_remote(image_tag("delete.gif"),
+                     :url => course_registrations_path(course_registration),
+                     :method => :delete,
+                     :confirm => "Are you sure you want to delete the course registration?"
+                     )
+   %>
+<% end %>

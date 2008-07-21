@@ -1,0 +1,79 @@
+8
+
+dir
+2
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner/trunk/vendor/rails/railties/configs
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner
+
+
+
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35ba3173-0730-0410-8f33-806d5331b7ff
+
+lighttpd.conf
+file
+
+
+
+
+2007-05-09T20:30:33.359375Z
+9df5d40f1b3a3a9f1248e44d6ebbabcf
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+routes.rb
+file
+
+
+
+
+2007-05-09T20:30:33.375000Z
+fd2fb9ed2713dea16ea89cdf2a10bc39
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+apache.conf
+file
+
+
+
+
+2007-05-09T20:30:33.406250Z
+eebf5d1e0a663f298d77013224f03e4f
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+databases
+dir
+
+empty.log
+file
+
+
+
+
+2007-05-09T20:30:33.421875Z
+d41d8cd98f00b204e9800998ecf8427e
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+

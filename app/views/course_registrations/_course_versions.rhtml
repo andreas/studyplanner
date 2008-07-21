@@ -1,0 +1,11 @@
+Please choose a course:<br />
+<ul>
+<% for course_version in @course_versions do %>
+  <li>
+  		<%= link_to_remote timetable_image(course_version),
+  						   :method => :post,
+  						   :url => { :controller => "course_registrations", :action => "create", :course_version => course_version }
+  	   %>
+  </li>
+<% end %>
+</ul>

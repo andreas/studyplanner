@@ -1,0 +1,11 @@
+<% unless @courses.empty? %>
+<ul>
+  <% for course in @courses do %>
+      <% content_tag "li", :id => dom_id(course), :class => dom_class(course) do %>
+        <%= link_to_remote_redbox("#{course.code} #{course.name}", :url => new_course_registrations_path(:course => course.id)) %>
+     <% end %>
+  <% end %>
+</ul>
+<% else %>
+No matches found.
+<% end %>

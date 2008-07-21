@@ -1,0 +1,52 @@
+8
+
+dir
+2
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner/trunk/vendor/rails/activerecord/test/connections/native_sqlite3
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner
+
+
+
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35ba3173-0730-0410-8f33-806d5331b7ff
+
+in_memory_connection.rb
+file
+
+
+
+
+2007-05-09T20:29:33.671875Z
+4935fb0fa312c64652dda8ac5310d974
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+connection.rb
+file
+
+
+
+
+2007-05-09T20:29:33.687500Z
+647d4ecd098cab594d8de4a20658281e
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+

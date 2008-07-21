@@ -1,0 +1,79 @@
+8
+
+dir
+2
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner/trunk/vendor/rails/actionwebservice/lib/action_web_service/protocol
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner
+
+
+
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35ba3173-0730-0410-8f33-806d5331b7ff
+
+soap_protocol
+dir
+
+abstract.rb
+file
+
+
+
+
+2007-05-09T20:30:19.515625Z
+bb1c4174455cc482b23bc833d5411fd9
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+soap_protocol.rb
+file
+
+
+
+
+2007-05-09T20:30:19.562500Z
+2bc22abbd746c9bdb06f884820ab5ce0
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+xmlrpc_protocol.rb
+file
+
+
+
+
+2007-05-09T20:30:19.578125Z
+97d2bae9c810525432407199dc45d69c
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+discovery.rb
+file
+
+
+
+
+2007-05-09T20:30:19.609375Z
+acbeabd2ab45fd54da4cd9f43560dfcb
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+

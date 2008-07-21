@@ -1,0 +1,4 @@
+<% rounded_box :style => "width: 600px;" do %>
+  <h2><%= @header %></h2>
+	<%= yield %>
+<% end %>
