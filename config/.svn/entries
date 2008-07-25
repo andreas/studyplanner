@@ -1,0 +1,79 @@
+8
+
+dir
+2
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner/trunk/config
+svn+ssh://andreas%25garnaes.dk@garnaes.dk/home/16742/users/andreas%25garnaes.dk/svn/studyplanner
+
+
+
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+35ba3173-0730-0410-8f33-806d5331b7ff
+
+routes.rb
+file
+
+
+
+
+2007-05-09T20:29:22.453125Z
+f2fa41609d3ea8fb320bacb302579e71
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+database.yml
+file
+
+
+
+
+2007-05-09T20:29:22.453125Z
+e4edf15f037e86f3bb6a52e9d7af31ea
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+boot.rb
+file
+
+
+
+
+2007-05-09T20:29:22.453125Z
+051f2b77c29b10f8b2e06a7dfd26ab07
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+environment.rb
+file
+
+
+
+
+2007-05-09T20:29:22.468750Z
+8429d50a1e56c0ba5edb60da97501864
+2007-05-09T12:13:44.681812Z
+2
+andreas%garnaes.dk
+
+environments
+dir
+
